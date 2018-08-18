@@ -1,4 +1,4 @@
-canvas = document.getElementById('lab');
+canvas = document.getElementById('game');
 ctx = canvas.getContext('2d');
 
 class Shooty {
