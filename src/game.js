@@ -28,12 +28,22 @@ const circle = (ctx, x, y) => {
     ctx.fill();
 }
 
+const drawLines = (ctx, x, y) => {
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(x, y);
+    ctx.stroke();
+    
+
+}
+
 
 canvas.addEventListener('click', event => {
     const moux = event.clientX;
     const mouy = event.clientY;
     circle(ctx, moux, mouy);
+    drawLines(ctx, moux, mouy);
+
     
 });
-
 
